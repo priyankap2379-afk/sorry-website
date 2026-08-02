@@ -16,7 +16,6 @@ font-family:Arial;
 
 body{
 height:100vh;
-<div id="letterPage" style="display:none; padding:30px;">
 display:flex;
 justify-content:center;
 align-items:center;
@@ -26,6 +25,8 @@ background:linear-gradient(
 #1c1c3c,
 #2a2a54
 );
+overflow-y:auto;
+overflow-x:hidden;
 }
 
 .container{
@@ -193,7 +194,6 @@ Please hear me out...
 I made this website only for you. ❤️
 
 </p>
-
 <button onclick="showLetter()" style="
 margin-top:40px;
 padding:18px 40px;
@@ -220,11 +220,10 @@ document.getElementById("page2").style.display="flex";
 
 }
 function showLetter(){
+    
+document.getElementById("page2").style.display = "none";
 
-    document.getElementById("page2").style.display = "none";
-
-    document.getElementById("letterPage").style.display = "flex";
-
+document.getElementById("letterPage").style.display = "block";
 }
 
 </script>
