@@ -154,9 +154,72 @@ opacity:.2;
 
 <p>Tap below to begin...</p>
 
-<button>Tap To Begin ✨</button>
+<butt<button onclick="showPage2()">Tap To Begin ✨</button>
+
+</div>
+<div id="page2" style="
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:linear-gradient(180deg,#ffd6ec,#ffeef8,#fff8fc);
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+padding:30px;
+z-index:100;
+">
+
+<h1 style="color:#ff4f8b;">Hi Nakchadi... 🌸</h1>
+
+<p style="
+color:#444;
+font-size:22px;
+line-height:1.8;
+margin-top:20px;
+">
+
+Before you leave...
+
+<br><br>
+
+Please hear me out...
+
+<br><br>
+
+I made this website only for you. ❤️
+
+</p>
+
+<button style="
+margin-top:40px;
+padding:18px 40px;
+border:none;
+border-radius:40px;
+background:#ff4f8b;
+color:white;
+font-size:20px;
+">
+
+Continue 💌
+
+</button>
 
 </div>
 
+<script>
+
+function showPage2(){
+
+document.querySelector(".container").style.display="none";
+
+document.getElementById("page2").style.display="flex";
+
+}
+
+</script>
 </body>
 </html>
