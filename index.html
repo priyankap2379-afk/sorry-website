@@ -28,6 +28,23 @@ background:linear-gradient(
 overflow-y:auto;
 overflow-x:hidden;
 }
+.petal{
+    position:fixed;
+    top:-50px;
+    font-size:24px;
+    animation:fall linear infinite;
+    pointer-events:none;
+    z-index:999;
+}
+
+@keyframes fall{
+    0%{
+        transform:translateY(-50px) rotate(0deg);
+    }
+    100%{
+        transform:translateY(110vh) rotate(360deg);
+    }
+}    
 .container{
     text-align:center;
     padding:20px;
@@ -227,7 +244,15 @@ document.getElementById("page2").style.display = "none";
 
 document.getElementById("letterPage").style.display = "block";
 }
-
+for(let i = 0; i < 25; i++){
+    let petal = document.createElement("div");
+    petal.className = "petal";
+    petal.innerHTML = "🌸";
+    petal.style.left = Math.random() * 100 + "vw";
+    petal.style.animationDuration = (Math.random() * 5 + 5) + "s";
+    petal.style.animationDelay = Math.random() * 5 + "s";
+    document.body.appendChild(petal);
+}
 </script>
   <div id="letterPage" style="display:none;">
 
