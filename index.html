@@ -276,6 +276,49 @@ Maafi maangne me mujhe koi sharam nahi.
 Bas itni si guzarish hai meri Nakchadi se,
 Apne Ladaku ko ek aur mauka de do... kyunki tumhare bina meri duniya hi nahi. 🌸❤️
     </p>
+<br><br>
+
+<br><br>
+
+<h2>💖 Will You Forgive Me? 💖</h2>
+
+<div style="position:relative; height:150px;">
+    <button onclick="yesAnswer()" id="yesBtn"
+        style="padding:12px 25px; font-size:18px; margin-right:20px;">
+        ❤️ Yes
+    </button>
+
+    <button id="noBtn"
+        onmouseover="moveNoButton()"
+        onclick="moveNoButton()"
+        style="position:absolute; padding:12px 25px; font-size:18px;">
+        💔 No
+    </button>
+</div>
+
+<p id="reply"
+   style="display:none; font-size:24px; color:pink; margin-top:20px;">
+</p>
+
+<script>
+function yesAnswer() {
+    document.getElementById("reply").style.display = "block";
+    document.getElementById("reply").innerHTML =
+    "🥹 Thank you Bhawani ❤️<br>I promise I'll never hurt you again. 🌹";
+}
+
+function moveNoButton() {
+    let btn = document.getElementById("noBtn");
+
+    let x = Math.random() * 220;
+    let y = Math.random() * 100;
+
+    btn.style.left = x + "px";
+    btn.style.top = y + "px";
+}
+        </script>
+
+
 
   </div>
 <audio id="bgMusic" autoplay loop>
