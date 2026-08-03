@@ -301,10 +301,19 @@ Apne Ladaku ko ek aur mauka de do... kyunki tumhare bina meri duniya hi nahi. �
 </p>
 
 <script>
-function yesAnswer() {
-    document.getElementById("reply").style.display = "block";
-    document.getElementById("reply").innerHTML =
-    "🥹 Thank you Bhawani ❤️<br>I promise I'll never hurt you again. 🌹";
+function yesAnswer(){
+
+    document.getElementById("letterPage").style.transition="1s";
+    document.getElementById("letterPage").style.opacity="0";
+
+    setTimeout(function(){
+
+        document.getElementById("letterPage").style.display="none";
+
+        document.getElementById("finalPage").style.display="flex";
+
+    },1000);
+
 }
 
 function moveNoButton() {
@@ -330,5 +339,43 @@ document.addEventListener("click", function () {
   document.getElementById("bgMusic").play();
 }, { once: true });
 </script>
+<div id="finalPage" style="
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:linear-gradient(180deg,#ffd6ec,#fff5fb,#ffffff);
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+padding:30px;
+z-index:9999;
+">
+
+<h1 style="color:#ff4f8b;">
+🌸 Thank You Bhawani 🌸
+</h1>
+
+<p style="
+font-size:24px;
+color:#555;
+line-height:1.8;
+">
+
+You just made my day... ❤️
+
+I promise I'll never break your trust again.
+
+Thank you for giving your Ladaku
+one more chance.
+
+Let's make new memories together... 🌸✨
+
+</p>
+
+</div>    
 </body>
 </html>
