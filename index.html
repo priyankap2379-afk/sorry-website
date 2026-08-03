@@ -214,6 +214,42 @@ opacity:.2;
         opacity:0;
     }
         }
+    @keyframes flyUp{
+    ...
+}
+
+/* PASTE THE NEW CSS HERE */
+
+#newBeginning{
+    margin-top:40px;
+    color:#ff4fa2;
+    font-size:32px;
+    text-shadow:
+        0 0 10px #ff4fa2,
+        0 0 20px #ff4fa2,
+        0 0 40px #ff80c0,
+        0 0 60px #ff80c0;
+    animation:newGlow 2s infinite alternate;
+}
+
+@keyframes newGlow{
+    from{
+        transform:scale(1);
+        text-shadow:
+            0 0 10px #ff4fa2,
+            0 0 20px #ff4fa2;
+    }
+
+    to{
+        transform:scale(1.08);
+        text-shadow:
+            0 0 20px #ff4fa2,
+            0 0 40px #ff80c0,
+            0 0 70px #ff80c0;
+    }
+}
+
+</style>
 </style>
 </head>
 
@@ -499,7 +535,9 @@ one more chance.
 Let's make new memories together... 🌸✨
 
 </p>
-
+<h2 id="newBeginning">
+✨ A New Beginning... ❤️ ✨
+</h2>
 </div>    
 </body>
 </html>
