@@ -538,6 +538,116 @@ Let's make new memories together... 🌸✨
 <h2 id="newBeginning">
 ✨ A New Beginning... ❤️ ✨
 </h2>
-</div>    
+</div> 
+</div>
+    
+<button onclick="openApology()" style="
+padding:15px 30px;
+border:none;
+border-radius:30px;
+background:#ff1744;
+color:white;
+font-size:20px;
+margin:20px;
+">
+💌 Read My Apology
+</button>    
+
+<!-- APOLOGY SECTION -->
+<div id="apologySection" style="
+display:none;
+position:fixed;
+inset:0;
+z-index:99999;
+background:linear-gradient(180deg,#09000d,#25000a,#0b0015);
+color:white;
+overflow-y:auto;
+text-align:center;
+padding:35px 20px;
+">
+
+<h1 style="color:#ff4d6d;margin-top:40px;">
+💔 I'm Really Sorry ❤️
+</h1>
+
+<p style="
+max-width:600px;
+margin:30px auto;
+font-size:20px;
+line-height:1.8;
+">
+I know I hurt you, and I know that saying “sorry” can't
+magically erase what happened.
+<br><br>
+But I genuinely regret hurting you.
+I never wanted to make you feel this way.
+<br><br>
+You mean so much to me, and I'm truly sorry. ❤️
+</p>
+
+<div style="font-size:55px;margin:25px 0;">
+🕷️ 💋 ❤️ 💋 🕷️
+</div>
+
+<h2 style="margin-top:35px;">
+Will you forgive me? 🥺
+</h2>
+
+<div style="margin-top:30px;">
+<button onclick="forgiveMe()" style="
+padding:15px 30px;
+border:none;
+border-radius:30px;
+background:#ff1744;
+color:white;
+font-size:20px;
+margin:10px;
+">
+YES ❤️
+</button>
+
+<button onclick="notYet()" style="
+padding:15px 30px;
+border:2px solid #ff4d6d;
+border-radius:30px;
+background:transparent;
+color:white;
+font-size:20px;
+margin:10px;
+">
+NOT YET 🥺
+</button>
+</div>
+
+<div id="answer" style="
+margin-top:30px;
+font-size:21px;
+line-height:1.6;
+"></div>
+
+</div>
+
+
+ <script>
+
+function openApology(){
+    document.getElementById("apologySection").style.display = "block";
+}
+
+function forgiveMe(){
+    document.getElementById("answer").innerHTML =
+    "🥺❤️ Thank you... you just made my heart so happy. 💋💋<br><br>" +
+    "I promise I'll do my best to never hurt you like that again. 🕷️❤️";
+}
+
+function notYet(){
+    document.getElementById("answer").innerHTML =
+    "I understand. 🥺❤️<br><br>" +
+    "Take your time. I'm not going to force you to forgive me.<br>" +
+    "I just want you to know that I'm genuinely sorry. 💋";
+}
+
+ </script>
+    
 </body>
 </html>
